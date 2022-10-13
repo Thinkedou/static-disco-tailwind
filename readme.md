@@ -9,6 +9,8 @@ Rendre l'album d'exemple dynamique
 
 ## Rajouter un album de son choix
 Histoire de manipuler un peu le data-model
+## Créer un composant CardAlbum
+
 
 ## v-for
 Charger allRecords.js et afficher tous les albums, attention à **:key**
