@@ -10,13 +10,15 @@ Histoire de manipuler un peu le data-model
 ## Créer une data reactive()
 Rendre l'album d'exemple dynamique
 
-## Créer un composant CardAlbum
-Pensez à bien déclarer les types des props
-
 ## v-for
 Charger allRecords.js et afficher tous les albums, attention à **:key**
+
+
 ## Les images 
 Switcher sur l'image default.jpg si un album n'a pas de cover 
+
+## Créer un composant CardAlbum
+Pensez à bien déclarer les types des props
 
 ## Gestion des stocks 
 Permettre la gestion des stocks via les btns [+] & [-]
