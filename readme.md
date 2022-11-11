@@ -4,13 +4,14 @@ Intégrer une maquette statique dans vue3 et travailler les directives et les ev
 
 ## Importer les assets
 Importer le layout et les assets (css, js, img) 
+## Rajouter un album de son choix
+Histoire de manipuler un peu le data-model
+
 ## Créer une data reactive()
 Rendre l'album d'exemple dynamique
 
-## Rajouter un album de son choix
-Histoire de manipuler un peu le data-model
 ## Créer un composant CardAlbum
-
+Pensez à bien déclarer les types des props
 
 ## v-for
 Charger allRecords.js et afficher tous les albums, attention à **:key**
@@ -19,12 +20,13 @@ Switcher sur l'image default.jpg si un album n'a pas de cover
 
 ## Gestion des stocks 
 Permettre la gestion des stocks via les btns [+] & [-]
+## v-if ou v-show pour picto stock
+Afficher le bon picto en fonction du stock de l'album
 
 ## Filtres
 Brancher les filtres  
 
-## v-if ou v-show pour picto stock
-Afficher le bon picto en fonction du stock de l'album
+
 
 ## mettre des albums en favoris 
 un click sur la card > fav, un autre > unfav 
