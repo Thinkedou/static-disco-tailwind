@@ -14,112 +14,107 @@
       </header>
       
     
-      <div class="flex-1 flex flex-col sm:flex-row ">
-        <main class="flex-1 bg-white py-5">
-
-          <!-- component -->
-
-              <section class="text-gray-600 body-font "> <!-- one records -->
-                  <div class="container px-5 mx-auto ">
-                    <div class="p-5 bg-white flex items-center mx-auto border-b shadow-md mb-10 border-gray-400 rounded-lg sm:flex-row flex-col">
-                    <div class="sm:w-44 sm:h-44 lg:w-40 lg:h-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                        <img
-                          src="https://www.mowno.com/wp-content/uploads/2018/04/MONOLITHE-NOIR-rin.jpg"/>
-                    </div>
-                  <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h1 class="text-black text-2xl title-font font-bold mb-2">RIN</h1>
-                    <h3 class="text-black text-xl title-font mb-2">Monolithe Noir <span class="font-light mr-2">2022</span></h3>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                    <div class="py-4">
-                        <div class=" inline-block mr-2" > <!-- quand le stock est ok  -->
-                            <div class="flex  pr-2 h-full items-center">
-                                <svg class="text-green-500 w-6 h-6 mr-1"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
-                                    <path stroke="none" d="M0 0h24v24H0z"/>  
-                                    <circle cx="12" cy="12" r="9" />  
-                                    <path d="M9 12l2 2l4 -4" />
-                                </svg>
-                                <p class="title-font font-medium">5 stock</p>
-                            </div>
-                        </div>                    
-                        <div class=" inline-block mr-2" > <!-- quand le stock est à zéro  -->
-                            <div class="flex  pr-2 h-full items-center">
-                                <svg class="text-gray-500 w-6 h-6 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  
-                                    <circle cx="12" cy="12" r="10" />  
-                                    <line x1="15" y1="9" x2="9" y2="15" /> 
-                                    <line x1="9" y1="9" x2="15" y2="15" />
-                                </svg>
-                                <p class="title-font font-medium">out of stock</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:flex font-bold text-gray-800">
-                        <div class="w-full md:w-1/2 flex space-x-3">
-                            <div class="w-1/2">
-                                <p >Pitchfork position #15</p> <!-- pitchfork pos  -->
-                            </div>
-                        </div>
-                        <div class="w-full">
-                            <div class="float-right">
-                                <button
-                                  type="button"
-                                  class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"
-                                >
-                                +
-                              </button>
-                              <button
-                                  type="button"
-                                  class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"
-                                >
-                                -
-                              </button>
-                            </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </section> <!-- end one records -->
-          
-         
-        </main>
-    
-        <div class="order-first w-2/12 flex px-8 bg-cyan-100 "> <!-- left filter panel -->
-          <div class="mt-2">
+      <div class="flex flex-row ">
+         <div class=" px-8 bg-cyan-100 "> <!-- left filter panel -->
+          <div class="mt-2 basis-1/4">
 
               <div class="overflow-hidden shadow sm:rounded-md">
-                <div class="bg-white p-6 w-64 h-96">
-                  
-                  <fieldset>
-                    <legend class="sr-only">Filtres</legend>
-                    <div class="text-base font-medium text-gray-900" aria-hidden="true">Filtres</div>
-                      <div class="mt-4 space-y-4">
+                  <div class="bg-white p-6 w-64 h-96">
+                    
+                    <fieldset>
+                      <legend class="sr-only">Filtres</legend>
+                      <div class="text-base font-medium text-gray-900" aria-hidden="true">Filtres</div>
+                        <div class="mt-4 space-y-4">
 
-                        <div class="flex items-start">
-                          <div class="flex h-5 items-center">
-                            <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                          <div class="flex items-start">
+                            <div class="flex h-5 items-center">
+                              <input 
+                                id="comments" 
+                                name="comments" 
+                                type="checkbox" 
+                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                               
+                              >
+                            </div>
+                            <div class="ml-3 text-sm">
+                              <label for="comments" class="font-medium text-cyan-700">In stock only</label>
+                            </div>
+                           
                           </div>
-                          <div class="ml-3 text-sm">
-                            <label for="comments" class="font-medium text-cyan-700">In stock only</label>
-                          </div>
+     
                         </div>
-   
-                      </div>
-                      <label for="sortBy" class="block text-sm mt-2 font-medium text-cyan-700">Sort by</label>
-                      <select id="sortBy" name="sortBy" autocomplete="country-name" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                        <option>Year     </option>
-                        <option>Pitchfork</option>
-                      </select>
-                  </fieldset>
-                 
-                </div>
+                        <label for="sortBy" class="block text-sm mt-2 font-medium text-cyan-700">Sort by</label>
+                        <select id="sortBy" name="sortBy" autocomplete="country-name" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                          <option>Year     </option>
+                          <option>Pitchfork</option>
+                        </select>
+                    </fieldset>
+                   
+                  </div>
                
               </div>
           </div>
-          
         </div>
+
+        <main class="bg-white py-5 ml-6 basis-auto">
+            <!-- component -->
+            <section class="text-gray-600 body-font">
+                <!-- one records -->
+                <div class="container px-5 mx-auto">
+                  <div class="p-5 bg-white flex items-center mx-auto border-b shadow-md mb-10 border-gray-400 rounded-lg sm:flex-row flex-col">
+                    <div class="sm:w-44 sm:h-44 lg:w-40 lg:h-40 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                      <img src="https://www.mowno.com/wp-content/uploads/2018/04/MONOLITHE-NOIR-rin.jpg">
+                    </div>
+                  <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  <h1 class="text-black text-2xl title-font font-bold mb-2">RIN</h1>
+                  <h3 class="text-black text-xl title-font mb-2">Monolithe Noir<span class="font-light mr-2">2022</span></h3>
+                  <p class="leading-relaxed text-base">Clarke screams like a man in fear for his own life as the song’s frenzied guitar tremolos</p>
+                  <div class="py-4">
+                      <div class=" inline-block mr-2" > <!-- quand le stock est ok  -->
+                        <div class="flex  pr-2 h-full items-center">
+                            <svg class="text-green-500 w-6 h-6 mr-1"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                                <path stroke="none" d="M0 0h24v24H0z"/>  
+                                <circle cx="12" cy="12" r="9" />  
+                                <path d="M9 12l2 2l4 -4" />
+                            </svg>
+                            <p class="title-font font-medium">5 stock</p>
+                        </div>
+                    </div>  
+                      <div class="inline-block mr-2"><!-- quand le stock est à zéro  -->
+                        <div class="flex pr-2 h-full items-center">
+                          <svg class="text-gray-500 w-6 h-6 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                          </svg>
+                          <p class="title-font font-medium">out of stock</p>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  <div class="md:flex font-bold text-gray-800">
+                    <div class="w-full md:w-1/2 flex space-x-3">
+                      <div class="w-1/2">
+                        <p>pitchfork pos : #28</p><!-- pitchfork pos  -->
+                      </div>
+                    </div>
+                  <div class="w-full">
+                    <div class="float-right">
+                      <button type="button" class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-teal-400"> + </button>
+                      <button type="button" class="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 ease select-none hover:bg-purple-800"> - </button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </section><!-- end one records -->
+
       </div>
     
       <footer class="bg-gray-100">Pied</footer>
+      
     </div>
   </body>
 </html>
