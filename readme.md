@@ -7,7 +7,7 @@ Importer le layout et les assets (css, js, img)
 ## Rajouter un album de son choix
 Histoire de manipuler un peu le data-model
 
-## Créer une data reactive()
+## Créer une data reactive avec ref()
 Rendre l'album d'exemple dynamique
 
 ## v-for
