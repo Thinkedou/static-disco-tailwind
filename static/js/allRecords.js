@@ -87,7 +87,7 @@ export const records = [
         "stock"          :7,
         "pitchforkPos"   :123,
         "comment"        : "Clarke screams like a man in fear for his own life as the song’s frenzied guitar tremolos",
-        "coverUrl"       :'https://media.pitchfork.com/photos/5d94b58ea540790008f9dbb0/master/w_1600,c_limit/Noname-Room25.jpg'
+        "coverUrl"       :'https://media.pitchfork.com/photos/5d76b1746eee70000829f38c/master/w_1600,c_limit/Deafheaven-Sunbather.jpg'
     }
 
 
